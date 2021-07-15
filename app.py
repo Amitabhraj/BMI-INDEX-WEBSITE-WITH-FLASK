@@ -17,9 +17,6 @@ def underweight(score):
     return render_template("bmi.html", result=res,comment=feed,score=score)
     
     
-    
-    
-    
 @app.route('/fit/<float:score>')
 def fit(score):
     res=""
@@ -76,10 +73,8 @@ def submit():
     elif total_score>18.5 and total_score<24.5:
         res="fit"
     else:
-        res="overweight"
+        res="overweight" 
     return redirect(url_for(res,score=total_score))
-
-
 
     
 if __name__=="__main__":
