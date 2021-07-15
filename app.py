@@ -26,7 +26,6 @@ def fit(score):
     else:
         res="overweight"
     return render_template("bmi.html", result=res,comment=feed,score=score)
-    
 
 
 
