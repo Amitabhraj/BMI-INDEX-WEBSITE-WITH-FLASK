@@ -1,12 +1,11 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
         <meta charset="utf-8" />
         <meta name="viewport"
                     content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <title>FINAL RESULT</title>
+        <title>BMI INDEX</title>
         <link rel="icon" type="image/x-icon" href="https://i.pinimg.com/originals/3f/3d/d9/3f3dd9219f7bb1c9617cf4f154b70383.jpg" />
         <style>
                 #loader {
@@ -52,13 +51,13 @@
                 };
         </script>
 </body>
+
 </html>
 
 
 
-<button><a href="https://bmiindex.pythonanywhere.com/"><u>Home</u></a></button>
-<button type="button" onclick="history.back()"><u>Go Back</u></button>
-<img src='https://pngimage.net/wp-content/uploads/2018/06/result-png-1.png' alt="" width=100% height=100%>
+
+<img src='https://blog.bcbsnc.com/wp-content/uploads/2018/10/BMI2.jpg' width='100%' height='100%'>
 
 
 
@@ -71,18 +70,30 @@ p {text-align: center;}
 </style>
 </head>
 <body>
-<p style="font-size:45px;position:relative;top:-50px;"><u>Final Result</u></p>
+<p style="font-size:45px"><u>BMI INDEX:-</u></p>
 </body>
 </html>
 
 
 
 
+<title>BMI INDEX</title>
+<body style="background-color:#FF9966">
+<form action="/submit_feet" method='post'>
+  <label for="weight"><div style="font-size:25px">Weight(in kg)</div></label><br>
+  <input type="text" id="weight" name="weight" style='width: 100%; height:35px;'><br><br>
+
+  <label for="heightf"><div style="font-size:25px">Enter Your Height(feet)</div></label><br>
+  <input type="text" id="weight" name="heightf" style='width: 100%; height:35px;'><br><br>
+
+  <label for="heighti"><div style="font-size:25px">Enter Your Height(inch)</div></label><br>
+  <input type="text" id="weight" name="heighti" style='width: 100%; height:35px;'><br><br>
+
+  <input type="submit" value="Submit" style="width: 100%; height:40px; background-color:#42FF00; color:black">
+</form> 
 
 
+<h3>NOTE:-AFTER SUBMITING BUTTON,&nbsp;YOU WILL KNOW THAT YOU ARE 'FIT' , 'UNDERWEIGHT' OR 'OVERWEIGHT' ACCORDING TO WEIGHT AND HEIGHT, NOT AT YOUR PHYSICAL APPEARENCE.</h3>
 
-<html>
-<body style="background-color:powderblue">
-<h2><p style="position:relative;top:-50px;">{{wrong}} You are {{result}} person {{comment}}{{score}} {{ex}}</p></h2>
 </body>
 </html>
