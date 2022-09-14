@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <meta name="viewport"
+                    content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>BMI INDEX</title>
+        <link rel="icon" type="image/x-icon" href="https://i.pinimg.com/originals/3f/3d/d9/3f3dd9219f7bb1c9617cf4f154b70383.jpg" />
+        <style>
+                #loader {
+                        border: 12px solid #f3f3f3;
+                        border-radius: 50%;
+                        border-top: 12px solid #444444;
+                        width: 70px;
+                        height: 70px;
+                        animation: spin 1s linear infinite;
+                }
+
+                @keyframes spin {
+                        100% {
+                                transform: rotate(360deg);
+                        }
+                }
+
+                .center {
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        margin: auto;
+                }
+        </style>
+</head>
+<body>
+        <div id="loader" class="center"></div>
+        <script>
+                document.onreadystatechange = function() {
+                        if (document.readyState !== "complete") {
+                                document.querySelector(
+                                    "body").style.visibility = "hidden";
+                                document.querySelector(
+                                    "#loader").style.visibility = "visible";
+                        } else {
+                                document.querySelector(
+                                    "#loader").style.display = "none";
+                                document.querySelector(
+                                    "body").style.visibility = "visible";
+                        }
+                };
+        </script>
+</body>
+
+</html>
+
+
+<img src='https://blog.bcbsnc.com/wp-content/uploads/2018/10/BMI2.jpg' width=100% height=100%>
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p {text-align: center;}
+</style>
+</head>
+<body>
+<p style="font-size:45px"><u>BMI INDEX:-</u></p>
+</body>
+</html>
+
+
+
+
+
+
+<title>BMI INDEX</title>
+<form action="/submit_meter" method='post'>
+<body style="background-color:#FF9966">
+  <label for="weight"><div style="font-size:25px">Weight(in kg)</div></label><br>
+  <input type="text" id="weight" name="weight" style='width: 100%; height:35px;'><br><br>
+
+  <label for="meter"><div style="font-size:25px">Enter Your Height(Meter)</div></label><br>
+  <input type="text" id="weight" name="meter" style='width: 100%; height:35px;'><br><br>
+
+  <input type="submit" value="Submit" style="width: 100%; height:40px; background-color:#42FF00; color:black">
+</form> 
+
+
+<h3>NOTE:-AFTER SUBMITING BUTTON,&nbsp;YOU WILL KNOW THAT YOU ARE 'FIT' , 'UNDERWEIGHT' OR 'OVERWEIGHT' ACCORDING TO WEIGHT AND HEIGHT, NOT AT YOUR PHYSICAL APPEARENCE.</h3>
+
+</body>
+</html>
