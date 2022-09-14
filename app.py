@@ -13,7 +13,7 @@ def underweight(score):
     res=""
     if score<18.5:
         res="underweight"
-        feed="Please thoda khao yaar!! Your bmi is just: "
+        feed="You Are Underweight! Your bmi is just: "
     return render_template("bmi.html", result=res,comment=feed,score=score)
     
     
@@ -22,7 +22,7 @@ def fit(score):
     res=""
     if score>18.5 and score<24.5:
         res="fit"
-        feed="Lage raho bhai!! Your bmi is: "
+        feed="Yo! You Are Fit Person..Keep It Up!! Your bmi is: "
     return render_template("bmi.html", result=res,comment=feed,score=score)
 
 
@@ -32,7 +32,7 @@ def overweight(score):
     res=""
     if score>24.5:
         res="overweight"
-        feed="Thoda kam khao yaar bahut mote ho gaye ho!! Your bmi is: "
+        feed="ohhh You Are Overwight Please Try to Do Exersice Daily!! Your bmi is: "
         extra=",Which is too much"
     return render_template("bmi.html", result=res,comment=feed,score=score,ex=extra)
 
@@ -175,6 +175,7 @@ def submit_meter():
         meter=float(request.form["meter"])
         
         BMI=(Weight/(meter**2))
+        print(BMI)
         BMI_str=str(BMI)
         approx_num=BMI_str[0:4]
 

@@ -7,6 +7,9 @@
                     content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>BMI INDEX(Home)</title>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
         <link rel="icon" type="image/x-icon" href="https://i.pinimg.com/originals/3f/3d/d9/3f3dd9219f7bb1c9617cf4f154b70383.jpg" />
         <style>
                 #loader {
@@ -57,12 +60,8 @@
 
 
 <style>
-html { 
-  background: url(https://digimarkme.com/wp-content/uploads/2015/01/6dbc3552718031a4-easy-to-advanced-data-structures-simpliv-llc.gif) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+body{ 
+    background-image: linear-gradient(rgb(45, 45, 45), rgb(113, 113, 113), rgb(211, 211, 195));
 }
 </style>
 
@@ -137,14 +136,14 @@ body {
 <div class="container">
     <span class="select-wrapper">
       <form action="/sub" method='post'>
-          <label><p style="color:white;font-size:20px"><b>&nbsp;&nbsp;&nbsp;CHOOSE A MEASUREMENT:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FOR HEIGHT</b></p></label>
-          <select name='measure' style="width:300px;">
+        <label><center><h3 style="color:rgb(0, 0, 0);font-size:30px">CHOOSE A MEASUREMENT FOR <br> HEIGHT</h3></center></label>
+          <center><select class="form-select" aria-label="Default select example" name='measure' style="width:300px;">
             <option>feet.inch</option>
             <option>cm</option>
             <option>meter</option>
-        </select>
-        <br><br>
-      <input type="submit" value="Submit">
+        </select></center>
+        <br>
+      <center><input type="submit" class="btn btn-success" value="Submit"></center>
   </form>
 </span>
 </div>

@@ -1,94 +1,80 @@
-<!doctype html>
-<html lang="en">
-<head>
+<html>
+  <head>
         <meta charset="utf-8" />
         <meta name="viewport"
                     content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <title>BMI INDEX</title>
-        <link rel="icon" type="image/x-icon" href="https://i.pinimg.com/originals/3f/3d/d9/3f3dd9219f7bb1c9617cf4f154b70383.jpg" />
-        <style>
-                #loader {
-                        border: 12px solid #f3f3f3;
-                        border-radius: 50%;
-                        border-top: 12px solid #444444;
-                        width: 70px;
-                        height: 70px;
-                        animation: spin 1s linear infinite;
-                }
-
-                @keyframes spin {
-                        100% {
-                                transform: rotate(360deg);
-                        }
-                }
-
-                .center {
-                        position: absolute;
-                        top: 0;
-                        bottom: 0;
-                        left: 0;
-                        right: 0;
-                        margin: auto;
-                }
-        </style>
-</head>
-<body>
-        <div id="loader" class="center"></div>
-        <script>
-                document.onreadystatechange = function() {
-                        if (document.readyState !== "complete") {
-                                document.querySelector(
-                                    "body").style.visibility = "hidden";
-                                document.querySelector(
-                                    "#loader").style.visibility = "visible";
-                        } else {
-                                document.querySelector(
-                                    "#loader").style.display = "none";
-                                document.querySelector(
-                                    "body").style.visibility = "visible";
-                        }
-                };
-        </script>
-</body>
-
-</html>
-
-
-<img src='https://blog.bcbsnc.com/wp-content/uploads/2018/10/BMI2.jpg' width=100% height=100%>
-
-
-
-
-<!DOCTYPE html>
-<html>
-<head>
+    <meta name="description" content="Responsive contact form using bootstrap,">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript,bootstrap,responsive,form,contact form,dd,dl,dt">
+    <meta name="author" content="Nasir Khan">
+    <title>Responsive Contact Form</title>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+  </head>
 <style>
-p {text-align: center;}
+        /* google fonts start*/
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Saira&display=swap');
+/* google fonts end*/
+
+body{
+  background:#222;
+}
+.form-control{
+  border-radius:0px;
+  border:0px;
+}
+.font-primary{
+  font-family: 'Kaushan Script', cursive;
+}
+.font-secondary{
+  font-family: 'Saira', sans-serif;
+}
+.form-area{
+  border:1px solid #fff;
+}
 </style>
-</head>
-<body>
-<p style="font-size:45px"><u>BMI INDEX:-</u></p>
-</body>
-</html>
+  <body>
+    <section id="contact-form">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 text-center">
+<!--             project title area start -->
+            <div class="title-area text-light">
+              <h1 class="font-primary">Welocme TO BMI-INDEX</h1>
+              <h2 class="font-secondary">Here You Can Check Your BMI by CentiMeter</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-8 offset-lg-2">
+            <div class="form-area mt-5 p-lg-4 p-3">
+                <div class="row">
+                  <div class="col-sm-12 text-center text-info mb-3 font-secondary">
+                    <h3>BMI INDEX</h3>
+                  </div>
+                </div>
+        <form action="/submit_cm" method='post'>
+                <dl class="row">
+                  <dt class="col-sm-4 text-info font-secondary">Enter Weight:-</dt>
+                  <dd class="col-sm-8"><input type="number" name="weight" class="form-control" placeholder="Enter Weight in Kg"></dd>
 
-
-
-
-<title>BMI INDEX</title>
-<form action="/submit_cm" method='post'>
-<body style="background-color:#FF9966">
-  <label for="weight"><div style="font-size:25px">Weight(in kg)</div></label><br>
-  <input type="text" id="weight" name="weight" style='width: 100%; height:35px;'><br><br>
-
-  <label for="cm"><div style="font-size:25px">Enter Your Height(Centimeter)</div></label><br>
-  <input type="text" id="weight" name="cm" style='width: 100%; height:35px;'><br><br>
-
-  <input type="submit" value="Submit" style="width: 100%; height:40px; background-color:#42FF00; color:black">
-</form> 
-
-
-<h3>NOTE:-AFTER SUBMITING BUTTON,&nbsp;YOU WILL KNOW THAT YOU ARE 'FIT' , 'UNDERWEIGHT' OR 'OVERWEIGHT' ACCORDING TO WEIGHT AND HEIGHT, NOT AT YOUR PHYSICAL APPEARENCE.</h3>
-
-</body>
+                  <dt class="col-sm-4 text-info font-secondary">Enter Height in Cm:-</dt>
+                  <dd class="col-sm-8">
+                    <input type="text" name="cm" class="form-control text" placeholder="Enter Height in CentiMeter">
+                  </dd>
+                </dl>
+                <div class="row">
+                  <div class="col-sm-12">
+                    <input type="submit" class="form-control bg-info text-light font-secondary" value="Submit" >
+                  </div>
+                </div>
+        </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+  </body>
 </html>
